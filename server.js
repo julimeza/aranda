@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const path = require('path');
 
 
@@ -1379,6 +1379,6 @@ app.delete('/clientes/:id', (req, res) => {
 app.use((req, res) => {
     res.status(404).json({ message: 'Página no encontrada' });
 });
-app.listen(port, () => {
-    console.log(`Servidor corriendo en ${port}`);
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
