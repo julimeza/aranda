@@ -6,7 +6,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const userType = document.getElementById('userType').value;
 
     const messageElement = document.getElementById('message');
-    fetch('http://localhost:3000/register', {
+    fetch('/api/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

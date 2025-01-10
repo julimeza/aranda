@@ -1381,5 +1381,5 @@ app.use((req, res) => {
     res.status(404).json({ message: 'Página no encontrada' });
 });
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
+    console.log(`Servidor corriendo en ${port}`);
 });
