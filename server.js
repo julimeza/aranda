@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const cors = require('cors');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const PORT = process.env.PORT || 3000;
 const path = require('path');
 
